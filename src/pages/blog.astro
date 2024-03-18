@@ -1,23 +1,27 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import imm024_N24 from '/Users/borisschwarz/Desktop/blog/img/imm024_N24.jpg';
+const pageTitle = "BLOG";
+const text = "Here, we have our blog, it is getting updated chronologically and our first goal is to show our process in terms of the project Mosphits.";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		        <a href="/">Home</a>
-                <a href="/about/">About</a>
-                <a href="/blog/">Blog</a>
+<BaseLayout pageTitle = {pageTitle},
+            text = {text}
+>
+    <img src="/Users/borisschwarz/Desktop/blog/img/imm024_N24.jpg" alt="A bird.">
 
-        <h2>BLOG</h1>
-		<h1>enréaliser x livelovelovelife x brokendreams x rocketscience?? x AAA+</h1>
-        <p>Here, we have our blog, it is getting updated chronologically and our first goal is to show our process in terms of the project Mosphits. </p>
-          </body>
-	</body>
-</html>
+    <ul>
+        <li><a href="/posts/post-1/">Post 1</a></li>
+        <li><a href="/posts/post-2/">Post 2</a></li>
+        <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
+
+</BaseLayout>
+
+
+
+
+
+
+
